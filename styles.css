@@ -15,17 +15,18 @@
 
 body {
   background-color: rgb(14 14 14);
+  font-family: sans-serif;
 }
 
 .main {
-  background: #eee;
+  background: #efe;
   display: flex;
   height: 100vh;
   margin: 0 15%;
 }
 
 .logo {
-  min-width: 37%;
+  flex-basis: 500px;
   background: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -33,7 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #eee;
+  color: #efe;
   text-align: center;
 }
 
@@ -44,7 +45,7 @@ body {
 }
 
 .logo .logo-title {
-  margin-top: 150px;
+  margin-top: 210px;
   padding: 10px;
   background: rgb(14 14 14 / 50%);
 
@@ -53,19 +54,33 @@ body {
 }
 
 .logo-title img {
-  width: 100px;
+  width: 90px;
 }
 
 .logo-footer {
-  font-family: sans-serif;
   font-size: 14px;
   margin-bottom: 10px;
 }
 
 .logo-footer a {
-  color: #eee;
+  color: #efe;
+}
+
+.content {
+  flex-basis: 700px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content .promotion {
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .sign-up-form {
-  min-width: 65%;
+  background: #fff;
+  height: 30%;
+  box-shadow: 7px 3px 3px 2px rgb(14 14 14 / 25%);
 }
