@@ -29,29 +29,75 @@
         </div>
       </div>
       <div class="content">
-        <div class="promotion">
-          <p>
-            This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams.
-            <br />
-            Sign up
-            <em>now</em>
-            to get started.
-          </p>
-          <p>
-            You
-            <em>know</em>
-            you want to.
-          </p>
-        </div>
-        <div class="sign-up-form">Let's do this!</div>
-        <div class="button-and-log-in">
-          <button>Create Account</button>
-          <p>
-            Already have an acount?
-            <a href="#">Log in</a>
-          </p>
-        </div>
+        <form action="" method="post">
+          <div class="promotion">
+            <p>
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+              <br />
+              Sign up
+              <em>now</em>
+              to get started.
+            </p>
+            <p>
+              You
+              <em>know</em>
+              you want to.
+            </p>
+          </div>
+          <div class="sign-up-form">
+            <h2>Let's do this!</h2>
+            <div class="input-form">
+              <p>
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" />
+              </p>
+              <p>
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" />
+              </p>
+              <p>
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" placeholder="abc@abc" />
+              </p>
+              <p>
+                <label for="phone">PHONE NUMBER</label>
+                <input
+                  type="text"
+                  id="phone"
+                  pattern="^\+?[1-9][0-9]{7,14}$"
+                  placeholder="+12341234"
+                />
+              </p>
+              <p>
+                <label for="password">PASSWORD</label>
+                <input
+                  type="password"
+                  id="password"
+                  pattern="\w{8,16}"
+                  required
+                />
+              </p>
+              <p>
+                <label for="password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="password"
+                  minlength="8"
+                  maxlength="16"
+                  required
+                />
+              </p>
+            </div>
+          </div>
+          <div class="button-and-log-in">
+            <button type="submit">Create Account</button>
+            <p>
+              Already have an acount?
+              <a href="#">Log in</a>
+            </p>
+          </div>
+        </form>
       </div>
     </div>
   </body>
